@@ -20,6 +20,7 @@ services:
     php:
         # build: ./php-mysqli
         # image指定build Dockerfile生成镜像的名称
+        # image: php:7.2-fpm-mysqli
         image: php-mysqli
         ports:
             - "9000:9000"
