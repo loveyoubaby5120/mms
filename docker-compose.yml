@@ -18,10 +18,10 @@ services:
         # 容器名称
         container_name: "compose-nginx"
     php:
-        # build: ./php-mysqli
+        build: ./php-mysqli
         # image指定build Dockerfile生成镜像的名称
-        # image: php:7.2-fpm-mysqli
-        image: bigtruedata/php-mysqli
+        image: php:7.2-fpm-mysqli
+        # image: bigtruedata/php-mysqli
         ports:
             - "9999:9000"
         volumes:
